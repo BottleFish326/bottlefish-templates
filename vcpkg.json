@@ -1,0 +1,17 @@
+{
+  "name": "bottlefish-templates",
+  "version": "1.0",
+  "dependencies": [
+    "abseil",
+    {
+      "name": "eigen3",
+      "version>=": "3.4.1"
+    },
+    {
+      "name": "fmt",
+      "version>=": "12.0.0"
+    },
+    "fmt",
+    "cli11"
+  ]
+}

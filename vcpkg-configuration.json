@@ -1,0 +1,18 @@
+{
+    "default-registry" : {
+        "kind": "git",
+        "repository": "https://github.com/microsoft/vcpkg",
+        "baseline": "b83220a8325549a2acc026a698a2b23a5a90f403"
+    },
+    "registries": [
+        {
+            "packages": [
+                "ryon-*",
+                "nonryon-*"
+            ],
+            "kind": "git",
+            "repository": "ssh://git@ryon.ren/GroupCommon/vcpkg-registry.git",
+            "baseline": "2b46661c4555f1cc59a5d8b116b5449b9fcd00e4"
+        }
+    ]
+}
