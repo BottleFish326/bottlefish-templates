@@ -1,0 +1,53 @@
+Package: vcpkg-cmake-config
+Version: 2024-05-23
+Architecture: x64-linux-clang-rel
+Multi-Arch: same
+Abi: 493569aa3646c58ace1091621172ad24af0d63339c54e79bdca207ac7a2e1d3a
+Status: install ok installed
+
+Package: vcpkg-cmake
+Version: 2024-04-23
+Architecture: x64-linux-clang-rel
+Multi-Arch: same
+Abi: d6824c390f14076691aa39076cd78d38d8d6f23644751d9532bd2a9ed2b566ef
+Status: install ok installed
+
+Package: abseil
+Version: 20250814.1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-linux-clang-rel
+Multi-Arch: same
+Abi: e0f7b78ab8f46ba941dde4d6ba41c5aaed0694c76cc7d054e05edccdf7604abd
+Description: Abseil is an open-source collection of C++ library code designed to augment the C++ standard library. The Abseil library code is collected from Google's own C++ code base, has been extensively tested and used in production, and is the same code we depend on in our daily coding lives.
+    In some cases, Abseil provides pieces missing from the C++ standard; in others, Abseil provides alternatives to the standard for special needs we've found through usage in the Google code base. We denote those cases clearly within the library code we provide you.
+    Abseil is not meant to be a competitor to the standard library; we've just found that many of these utilities serve a purpose within our code base, and we now want to provide those resources to the C++ community as a whole.
+Status: install ok installed
+
+Package: cli11
+Version: 2.6.1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-linux-clang-rel
+Multi-Arch: same
+Abi: 55c4f2433673fd47849c954f126e86243b7f65543188ecaae479b624753853e7
+Description: CLI11 is a command line parser for C++11 and beyond that provides a rich feature set with a simple and intuitive interface.
+Status: install ok installed
+
+Package: eigen3
+Version: 3.4.1
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-linux-clang-rel
+Multi-Arch: same
+Abi: 1bace1258307fcf7b0a463aeef8b4523f30fe19eee27d76a0d9428a08afd1887
+Description: C++ template library for linear algebra: matrices, vectors, numerical solvers, and related algorithms.
+Status: install ok installed
+
+Package: fmt
+Version: 12.1.0
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-linux-clang-rel
+Multi-Arch: same
+Abi: cb87f23274d04d77c253c627a7f2de43da08515601cb3080c6ddb528fbb7514a
+Description: {fmt} is an open-source formatting library providing a fast and safe alternative to C stdio and C++ iostreams.
+Status: install ok installed
+

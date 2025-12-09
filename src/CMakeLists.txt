@@ -1,4 +1,4 @@
-add_library(bottlefish_templates INTERFACE)
+add_library(bottlefish_templates SHARED)
 
 set_property(TARGET bottlefish_templates PROPERTY CXX_SCAN_FOR_MODULES ON)
 

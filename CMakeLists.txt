@@ -20,4 +20,4 @@ find_package(Eigen3 3.4 CONFIG REQUIRED)
 find_package(CLI11 CONFIG REQUIRED)
 find_package(absl CONFIG REQUIRED)
 
-add_library(src)
+add_subdirectory(src)
