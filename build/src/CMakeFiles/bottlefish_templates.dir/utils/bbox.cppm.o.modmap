@@ -1,0 +1,2 @@
+-x c++-module
+-fmodule-output=src/CMakeFiles/bottlefish_templates.dir/bottlefish.utils.bbox.pcm

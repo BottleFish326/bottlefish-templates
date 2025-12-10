@@ -1,0 +1,16 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "src/CMakeFiles/bottlefish_templates.dir/utils/bbox.cppm.o",
+      "provides": [
+        {
+          "is-interface": true,
+          "logical-name": "bottlefish.utils.bbox",
+          "source-path": "/home/yzp/Documents/cad/bottlefish-templates/src/utils/bbox.cppm"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

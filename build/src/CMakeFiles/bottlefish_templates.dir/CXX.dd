@@ -1,0 +1,4 @@
+ninja_dyndep_version = 1.0
+build src/CMakeFiles/bottlefish_templates.dir/utils/bbox.cppm.o | src/CMakeFiles/bottlefish_templates.dir/bottlefish.utils.bbox.pcm: dyndep
+  restat = 1
+

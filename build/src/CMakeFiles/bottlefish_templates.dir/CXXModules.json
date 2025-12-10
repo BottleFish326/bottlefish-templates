@@ -1,0 +1,19 @@
+{
+	"modules" : 
+	{
+		"bottlefish.utils.bbox" : 
+		{
+			"bmi" : "/home/yzp/Documents/cad/bottlefish-templates/build/src/CMakeFiles/bottlefish_templates.dir/bottlefish.utils.bbox.pcm",
+			"is-private" : false
+		}
+	},
+	"references" : 
+	{
+		"bottlefish.utils.bbox" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "src/CMakeFiles/bottlefish_templates.dir/bottlefish.utils.bbox.pcm"
+		}
+	},
+	"usages" : {}
+}

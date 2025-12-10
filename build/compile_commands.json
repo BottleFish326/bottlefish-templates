@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/yzp/Documents/cad/bottlefish-templates/build",
+  "command": "/usr/bin/clang++ -Dbottlefish_templates_EXPORTS -isystem /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/include/eigen3 -isystem /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/include -stdlib=libc++ -O3 -DNDEBUG -std=gnu++23 -fPIC -fdiagnostics-color @src/CMakeFiles/bottlefish_templates.dir/utils/bbox.cppm.o.modmap -o src/CMakeFiles/bottlefish_templates.dir/utils/bbox.cppm.o -c /home/yzp/Documents/cad/bottlefish-templates/src/utils/bbox.cppm",
+  "file": "/home/yzp/Documents/cad/bottlefish-templates/src/utils/bbox.cppm",
+  "output": "/home/yzp/Documents/cad/bottlefish-templates/build/src/CMakeFiles/bottlefish_templates.dir/utils/bbox.cppm.o"
+}
+]

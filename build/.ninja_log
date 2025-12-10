@@ -1,0 +1,8 @@
+# ninja log v7
+1	103	1765285275248221383	src/CMakeFiles/bottlefish_templates.dir/utils/bbox.cppm.o.ddi	d1c7ac061f63f08a
+103	110	1765285275357245745	src/CMakeFiles/bottlefish_templates.dir/CXX.dd	fd07a19c394ef3ce
+103	110	1765285275357245745	src/CMakeFiles/bottlefish_templates.dir/CXXModules.json	fd07a19c394ef3ce
+103	110	1765285275357245745	src/CMakeFiles/bottlefish_templates.dir/utils/bbox.cppm.o.modmap	fd07a19c394ef3ce
+110	1863	1765285277105280262	src/CMakeFiles/bottlefish_templates.dir/utils/bbox.cppm.o	8fe12e1c86070ca8
+110	1863	1765285277105280262	src/CMakeFiles/bottlefish_templates.dir/bottlefish.utils.bbox.pcm	8fe12e1c86070ca8
+1867	1894	1765285277114623308	src/libbottlefish_templates.so	9ef816137832f77
