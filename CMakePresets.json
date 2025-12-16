@@ -17,8 +17,6 @@
                 "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
                 "VCPKG_TARGET_TRIPLET": "x64-linux-clang-rel",
                 "VCPKG_HOST_TRIPLET": "x64-linux-clang-rel",
-                "VCPKG_CHAINLOAD_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/registries/ryon.ren/toolchains/clang-toolchain.cmake",
-                "VCPKG_OVERLAY_TRIPLETS": "$env{VCPKG_ROOT}/registries/ryon.ren/triplets",
                 "VCPKG_INSTALLED_DIR": "${sourceDir}/vcpkg_installed",
                 "VCPKG_MANIFEST_INSTALL": "ON"
             }

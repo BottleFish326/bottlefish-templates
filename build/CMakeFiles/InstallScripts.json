@@ -2,8 +2,8 @@
 	"InstallScripts" : 
 	[
 		"/home/yzp/Documents/cad/bottlefish-templates/build/cmake_install.cmake",
-		"/home/yzp/Documents/cad/bottlefish-templates/build/src/cmake_install.cmake",
-		"/home/yzp/Documents/cad/bottlefish-templates/build/src/utils/cmake_install.cmake"
+		"/home/yzp/Documents/cad/bottlefish-templates/build/lib/cmake_install.cmake",
+		"/home/yzp/Documents/cad/bottlefish-templates/build/cli/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

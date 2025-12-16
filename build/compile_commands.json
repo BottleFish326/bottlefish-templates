@@ -1,8 +1,14 @@
 [
 {
   "directory": "/home/yzp/Documents/cad/bottlefish-templates/build",
-  "command": "/usr/bin/clang++ -Dbottlefish_templates_EXPORTS -isystem /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/include/eigen3 -isystem /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/include -stdlib=libc++ -O3 -DNDEBUG -std=gnu++23 -fPIC -fdiagnostics-color @src/CMakeFiles/bottlefish_templates.dir/utils/bbox.cppm.o.modmap -o src/CMakeFiles/bottlefish_templates.dir/utils/bbox.cppm.o -c /home/yzp/Documents/cad/bottlefish-templates/src/utils/bbox.cppm",
-  "file": "/home/yzp/Documents/cad/bottlefish-templates/src/utils/bbox.cppm",
-  "output": "/home/yzp/Documents/cad/bottlefish-templates/build/src/CMakeFiles/bottlefish_templates.dir/utils/bbox.cppm.o"
+  "command": "/usr/bin/clang++ -I/home/yzp/Documents/cad/bottlefish-templates/lib/include -isystem /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/include/eigen3 -isystem /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/include -stdlib=libc++ -O3 -DNDEBUG -std=gnu++20 -fPIC -fdiagnostics-color -o lib/CMakeFiles/bottlefish.dir/bvh/aabb.cpp.o -c /home/yzp/Documents/cad/bottlefish-templates/lib/bvh/aabb.cpp",
+  "file": "/home/yzp/Documents/cad/bottlefish-templates/lib/bvh/aabb.cpp",
+  "output": "/home/yzp/Documents/cad/bottlefish-templates/build/lib/CMakeFiles/bottlefish.dir/bvh/aabb.cpp.o"
+},
+{
+  "directory": "/home/yzp/Documents/cad/bottlefish-templates/build",
+  "command": "/usr/bin/clang++ -I/home/yzp/Documents/cad/bottlefish-templates/lib/include -isystem /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/include/eigen3 -isystem /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/include -stdlib=libc++ -O3 -DNDEBUG -std=gnu++20 -fPIE -fdiagnostics-color -o cli/CMakeFiles/mytest.dir/test_main.cpp.o -c /home/yzp/Documents/cad/bottlefish-templates/cli/test_main.cpp",
+  "file": "/home/yzp/Documents/cad/bottlefish-templates/cli/test_main.cpp",
+  "output": "/home/yzp/Documents/cad/bottlefish-templates/build/cli/CMakeFiles/mytest.dir/test_main.cpp.o"
 }
 ]

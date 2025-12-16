@@ -70,119 +70,141 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 # =============================================================================
-# Object build statements for SHARED_LIBRARY target bottlefish_templates
+# Object build statements for STATIC_LIBRARY target bottlefish
 
 
 #############################################
-# Order-only phony target for bottlefish_templates
+# Order-only phony target for bottlefish
 
-build cmake_object_order_depends_target_bottlefish_templates: phony || .
+build cmake_object_order_depends_target_bottlefish: phony || .
 
-build src/CMakeFiles/bottlefish_templates.dir/utils/bbox.cppm.o.ddi: CXX_SCAN__bottlefish_templates_Release /home/yzp/Documents/cad/bottlefish-templates/src/utils/bbox.cppm || cmake_object_order_depends_target_bottlefish_templates
-  DEFINES = -Dbottlefish_templates_EXPORTS
-  DEP_FILE = src/CMakeFiles/bottlefish_templates.dir/utils/bbox.cppm.o.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = src/CMakeFiles/bottlefish_templates.dir/utils/bbox.cppm.o.ddi
-  FLAGS = -stdlib=libc++ -O3 -DNDEBUG -std=gnu++23 -fPIC -fdiagnostics-color
-  INCLUDES = -isystem /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/include/eigen3 -isystem /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/include
-  OBJ_FILE = src/CMakeFiles/bottlefish_templates.dir/utils/bbox.cppm.o
-  PREPROCESSED_OUTPUT_FILE = src/CMakeFiles/bottlefish_templates.dir/utils/bbox.cppm.o.ddi.i
-
-build src/CMakeFiles/bottlefish_templates.dir/utils/bbox.cppm.o: CXX_COMPILER__bottlefish_templates_scanned_Release /home/yzp/Documents/cad/bottlefish-templates/src/utils/bbox.cppm | src/CMakeFiles/bottlefish_templates.dir/utils/bbox.cppm.o.modmap || cmake_object_order_depends_target_bottlefish_templates src/CMakeFiles/bottlefish_templates.dir/CXX.dd
+build lib/CMakeFiles/bottlefish.dir/bvh/aabb.cpp.o: CXX_COMPILER__bottlefish_unscanned_Release /home/yzp/Documents/cad/bottlefish-templates/lib/bvh/aabb.cpp || cmake_object_order_depends_target_bottlefish
   CONFIG = Release
-  DEFINES = -Dbottlefish_templates_EXPORTS
-  DEP_FILE = src/CMakeFiles/bottlefish_templates.dir/utils/bbox.cppm.o.d
-  DYNDEP_MODULE_MAP_FILE = src/CMakeFiles/bottlefish_templates.dir/utils/bbox.cppm.o.modmap
-  FLAGS = -stdlib=libc++ -O3 -DNDEBUG -std=gnu++23 -fPIC -fdiagnostics-color
-  INCLUDES = -isystem /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/include/eigen3 -isystem /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/include
-  OBJECT_DIR = src/CMakeFiles/bottlefish_templates.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/bottlefish_templates.dir/utils
-  TARGET_SUPPORT_DIR = src/CMakeFiles/bottlefish_templates.dir
-  dyndep = src/CMakeFiles/bottlefish_templates.dir/CXX.dd
-
-build src/CMakeFiles/bottlefish_templates.dir/CXX.dd | src/CMakeFiles/bottlefish_templates.dir/CXXModules.json src/CMakeFiles/bottlefish_templates.dir/utils/bbox.cppm.o.modmap: CXX_DYNDEP__bottlefish_templates_Release src/CMakeFiles/bottlefish_templates.dir/utils/bbox.cppm.o.ddi | /home/yzp/Documents/cad/bottlefish-templates/build/src/CMakeFiles/bottlefish_templates.dir/CXXDependInfo.json
+  DEP_FILE = lib/CMakeFiles/bottlefish.dir/bvh/aabb.cpp.o.d
+  FLAGS = -stdlib=libc++ -O3 -DNDEBUG -std=gnu++20 -fPIC -fdiagnostics-color
+  INCLUDES = -I/home/yzp/Documents/cad/bottlefish-templates/lib/include -isystem /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/include/eigen3 -isystem /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/include
+  OBJECT_DIR = lib/CMakeFiles/bottlefish.dir
+  OBJECT_FILE_DIR = lib/CMakeFiles/bottlefish.dir/bvh
+  TARGET_SUPPORT_DIR = lib/CMakeFiles/bottlefish.dir
 
 
 # =============================================================================
-# Link build statements for SHARED_LIBRARY target bottlefish_templates
+# Link build statements for STATIC_LIBRARY target bottlefish
 
 
 #############################################
-# Link the shared library src/libbottlefish_templates.so
+# Link the static library lib/libbottlefish.a
 
-build src/libbottlefish_templates.so: CXX_SHARED_LIBRARY_LINKER__bottlefish_templates_Release src/CMakeFiles/bottlefish_templates.dir/utils/bbox.cppm.o | /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/lib/libabsl_base.a /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/lib/libfmt.a /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/lib/libabsl_raw_logging_internal.a /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/lib/libabsl_log_severity.a /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/lib/libabsl_spinlock_wait.a
+build lib/libbottlefish.a: CXX_STATIC_LIBRARY_LINKER__bottlefish_Release lib/CMakeFiles/bottlefish.dir/bvh/aabb.cpp.o
   CONFIG = Release
-  DEP_FILE = src/CMakeFiles/bottlefish_templates.dir/link.d
   LANGUAGE_COMPILE_FLAGS = -stdlib=libc++ -O3 -DNDEBUG
-  LINK_FLAGS = -shared -lc++abi -fuse-ld=lld -Xlinker --dependency-file=src/CMakeFiles/bottlefish_templates.dir/link.d
-  LINK_LIBRARIES = /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/lib/libabsl_base.a  /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/lib/libfmt.a  /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/lib/libabsl_raw_logging_internal.a  /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/lib/libabsl_log_severity.a  /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/lib/libabsl_spinlock_wait.a  -lrt
-  OBJECT_DIR = src/CMakeFiles/bottlefish_templates.dir
+  OBJECT_DIR = lib/CMakeFiles/bottlefish.dir
   POST_BUILD = :
   PRE_LINK = :
-  SONAME = libbottlefish_templates.so
-  SONAME_FLAG = -Wl,-soname,
-  TARGET_FILE = src/libbottlefish_templates.so
-  TARGET_PDB = bottlefish_templates.so.dbg
-  TARGET_SUPPORT_DIR = src/CMakeFiles/bottlefish_templates.dir
+  TARGET_FILE = lib/libbottlefish.a
+  TARGET_PDB = bottlefish.a.dbg
+  TARGET_SUPPORT_DIR = lib/CMakeFiles/bottlefish.dir
 
 
 #############################################
 # Utility command for edit_cache
 
-build src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/yzp/Documents/cad/bottlefish-templates/build/src && /usr/bin/cmake-gui -S/home/yzp/Documents/cad/bottlefish-templates -B/home/yzp/Documents/cad/bottlefish-templates/build
+build lib/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/yzp/Documents/cad/bottlefish-templates/build/lib && /usr/bin/cmake-gui -S/home/yzp/Documents/cad/bottlefish-templates -B/home/yzp/Documents/cad/bottlefish-templates/build
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
 
-build src/edit_cache: phony src/CMakeFiles/edit_cache.util
+build lib/edit_cache: phony lib/CMakeFiles/edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/yzp/Documents/cad/bottlefish-templates/build/src && /usr/bin/cmake --regenerate-during-build -S/home/yzp/Documents/cad/bottlefish-templates -B/home/yzp/Documents/cad/bottlefish-templates/build
+build lib/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/yzp/Documents/cad/bottlefish-templates/build/lib && /usr/bin/cmake --regenerate-during-build -S/home/yzp/Documents/cad/bottlefish-templates -B/home/yzp/Documents/cad/bottlefish-templates/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build src/rebuild_cache: phony src/CMakeFiles/rebuild_cache.util
+build lib/rebuild_cache: phony lib/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/yzp/Documents/cad/bottlefish-templates/src/CMakeLists.txt
+# /home/yzp/Documents/cad/bottlefish-templates/CMakeLists.txt
 # =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target mytest
+
+
+#############################################
+# Order-only phony target for mytest
+
+build cmake_object_order_depends_target_mytest: phony || cmake_object_order_depends_target_bottlefish
+
+build cli/CMakeFiles/mytest.dir/test_main.cpp.o: CXX_COMPILER__mytest_unscanned_Release /home/yzp/Documents/cad/bottlefish-templates/cli/test_main.cpp || cmake_object_order_depends_target_mytest
+  CONFIG = Release
+  DEP_FILE = cli/CMakeFiles/mytest.dir/test_main.cpp.o.d
+  FLAGS = -stdlib=libc++ -O3 -DNDEBUG -std=gnu++20 -fPIE -fdiagnostics-color
+  INCLUDES = -I/home/yzp/Documents/cad/bottlefish-templates/lib/include -isystem /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/include/eigen3 -isystem /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/include
+  OBJECT_DIR = cli/CMakeFiles/mytest.dir
+  OBJECT_FILE_DIR = cli/CMakeFiles/mytest.dir
+  TARGET_SUPPORT_DIR = cli/CMakeFiles/mytest.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target mytest
+
+
+#############################################
+# Link the executable cli/mytest
+
+build cli/mytest: CXX_EXECUTABLE_LINKER__mytest_Release cli/CMakeFiles/mytest.dir/test_main.cpp.o | lib/libbottlefish.a /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/lib/libabsl_base.a /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/lib/libabsl_raw_logging_internal.a /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/lib/libabsl_log_severity.a /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/lib/libabsl_spinlock_wait.a /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/lib/libfmt.a || lib/libbottlefish.a
+  CONFIG = Release
+  DEP_FILE = cli/CMakeFiles/mytest.dir/link.d
+  FLAGS = -stdlib=libc++ -O3 -DNDEBUG
+  LINK_FLAGS = -lc++abi -fuse-ld=lld -Xlinker --dependency-file=cli/CMakeFiles/mytest.dir/link.d
+  LINK_LIBRARIES = lib/libbottlefish.a  /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/lib/libabsl_base.a  /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/lib/libabsl_raw_logging_internal.a  /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/lib/libabsl_log_severity.a  /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/lib/libabsl_spinlock_wait.a  -lrt  /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/lib/libfmt.a
+  OBJECT_DIR = cli/CMakeFiles/mytest.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = cli/mytest
+  TARGET_PDB = mytest.dbg
+  TARGET_SUPPORT_DIR = cli/CMakeFiles/mytest.dir
 
 
 #############################################
 # Utility command for edit_cache
 
-build src/utils/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/yzp/Documents/cad/bottlefish-templates/build/src/utils && /usr/bin/cmake-gui -S/home/yzp/Documents/cad/bottlefish-templates -B/home/yzp/Documents/cad/bottlefish-templates/build
+build cli/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/yzp/Documents/cad/bottlefish-templates/build/cli && /usr/bin/cmake-gui -S/home/yzp/Documents/cad/bottlefish-templates -B/home/yzp/Documents/cad/bottlefish-templates/build
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
 
-build src/utils/edit_cache: phony src/utils/CMakeFiles/edit_cache.util
+build cli/edit_cache: phony cli/CMakeFiles/edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build src/utils/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/yzp/Documents/cad/bottlefish-templates/build/src/utils && /usr/bin/cmake --regenerate-during-build -S/home/yzp/Documents/cad/bottlefish-templates -B/home/yzp/Documents/cad/bottlefish-templates/build
+build cli/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/yzp/Documents/cad/bottlefish-templates/build/cli && /usr/bin/cmake --regenerate-during-build -S/home/yzp/Documents/cad/bottlefish-templates -B/home/yzp/Documents/cad/bottlefish-templates/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build src/utils/rebuild_cache: phony src/utils/CMakeFiles/rebuild_cache.util
+build cli/rebuild_cache: phony cli/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
 # Target aliases.
 
-build bottlefish_templates: phony src/libbottlefish_templates.so
+build bottlefish: phony lib/libbottlefish.a
 
-build libbottlefish_templates.so: phony src/libbottlefish_templates.so
+build libbottlefish.a: phony lib/libbottlefish.a
+
+build mytest: phony cli/mytest
 
 # =============================================================================
 # Folder targets.
@@ -192,21 +214,21 @@ build libbottlefish_templates.so: phony src/libbottlefish_templates.so
 #############################################
 # Folder: /home/yzp/Documents/cad/bottlefish-templates/build
 
-build all: phony src/all
+build all: phony lib/all cli/all
 
 # =============================================================================
 
 #############################################
-# Folder: /home/yzp/Documents/cad/bottlefish-templates/build/src
+# Folder: /home/yzp/Documents/cad/bottlefish-templates/build/cli
 
-build src/all: phony src/libbottlefish_templates.so src/utils/all
+build cli/all: phony cli/mytest
 
 # =============================================================================
 
 #############################################
-# Folder: /home/yzp/Documents/cad/bottlefish-templates/build/src/utils
+# Folder: /home/yzp/Documents/cad/bottlefish-templates/build/lib
 
-build src/utils/all: phony
+build lib/all: phony lib/libbottlefish.a
 
 # =============================================================================
 # Built-in targets
@@ -215,14 +237,14 @@ build src/utils/all: phony
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja /home/yzp/Documents/cad/bottlefish-templates/build/cmake_install.cmake /home/yzp/Documents/cad/bottlefish-templates/build/src/cmake_install.cmake /home/yzp/Documents/cad/bottlefish-templates/build/src/utils/cmake_install.cmake: RERUN_CMAKE | /home/yzp/Documents/cad/bottlefish-templates/CMakeLists.txt /home/yzp/Documents/cad/bottlefish-templates/cmake/settings.cmake /home/yzp/Documents/cad/bottlefish-templates/src/CMakeLists.txt /home/yzp/Documents/cad/bottlefish-templates/src/utils/CMakeLists.txt /home/yzp/Documents/cad/bottlefish-templates/vcpkg-configuration.json /home/yzp/Documents/cad/bottlefish-templates/vcpkg.json /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/absl/abslConfig.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/absl/abslConfigVersion.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/absl/abslTargets-release.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/absl/abslTargets.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/cli11/CLI11Config-release.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/cli11/CLI11Config.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/cli11/CLI11ConfigVersion.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/eigen3/Eigen3Config.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/eigen3/Eigen3ConfigVersion.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/eigen3/Eigen3Targets.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/fmt/fmt-config-version.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/fmt/fmt-config.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/fmt/fmt-targets-release.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/fmt/fmt-targets.cmake /home/yzp/vcpkg/registries/ryon.ren/toolchains/clang-toolchain.cmake /home/yzp/vcpkg/scripts/buildsystems/vcpkg.cmake /home/yzp/vcpkg/scripts/toolchains/linux.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeDependentOption.cmake /usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake /usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake /usr/share/cmake/Modules/CheckIncludeFileCXX.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake/Modules/Compiler/Clang.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake /usr/share/cmake/Modules/Internal/CheckFlagCommonConfig.cmake /usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Linker/LLD-CXX.cmake /usr/share/cmake/Modules/Linker/LLD.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-LLD-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-LLD.cmake /usr/share/cmake/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/4.2.0/CMakeCXXCompiler.cmake CMakeFiles/4.2.0/CMakeSystem.cmake
+build build.ninja /home/yzp/Documents/cad/bottlefish-templates/build/cmake_install.cmake /home/yzp/Documents/cad/bottlefish-templates/build/lib/cmake_install.cmake /home/yzp/Documents/cad/bottlefish-templates/build/cli/cmake_install.cmake: RERUN_CMAKE | /home/yzp/Documents/cad/bottlefish-templates/CMakeLists.txt /home/yzp/Documents/cad/bottlefish-templates/cli/CMakeLists.txt /home/yzp/Documents/cad/bottlefish-templates/cmake/settings.cmake /home/yzp/Documents/cad/bottlefish-templates/lib/CMakeLists.txt /home/yzp/Documents/cad/bottlefish-templates/vcpkg-configuration.json /home/yzp/Documents/cad/bottlefish-templates/vcpkg.json /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/absl/abslConfig.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/absl/abslConfigVersion.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/absl/abslTargets-release.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/absl/abslTargets.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/cli11/CLI11Config-release.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/cli11/CLI11Config.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/cli11/CLI11ConfigVersion.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/eigen3/Eigen3Config.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/eigen3/Eigen3ConfigVersion.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/eigen3/Eigen3Targets.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/fmt/fmt-config-version.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/fmt/fmt-config.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/fmt/fmt-targets-release.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/fmt/fmt-targets.cmake /home/yzp/vcpkg/registries/ryon.ren/toolchains/clang-toolchain.cmake /home/yzp/vcpkg/scripts/buildsystems/vcpkg.cmake /home/yzp/vcpkg/scripts/toolchains/linux.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeDependentOption.cmake /usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake /usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake /usr/share/cmake/Modules/CheckIncludeFileCXX.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake/Modules/Compiler/Clang.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake /usr/share/cmake/Modules/Internal/CheckFlagCommonConfig.cmake /usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Linker/LLD-CXX.cmake /usr/share/cmake/Modules/Linker/LLD.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-LLD-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-LLD.cmake /usr/share/cmake/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/4.2.0/CMakeCXXCompiler.cmake CMakeFiles/4.2.0/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/yzp/Documents/cad/bottlefish-templates/CMakeLists.txt /home/yzp/Documents/cad/bottlefish-templates/cmake/settings.cmake /home/yzp/Documents/cad/bottlefish-templates/src/CMakeLists.txt /home/yzp/Documents/cad/bottlefish-templates/src/utils/CMakeLists.txt /home/yzp/Documents/cad/bottlefish-templates/vcpkg-configuration.json /home/yzp/Documents/cad/bottlefish-templates/vcpkg.json /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/absl/abslConfig.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/absl/abslConfigVersion.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/absl/abslTargets-release.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/absl/abslTargets.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/cli11/CLI11Config-release.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/cli11/CLI11Config.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/cli11/CLI11ConfigVersion.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/eigen3/Eigen3Config.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/eigen3/Eigen3ConfigVersion.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/eigen3/Eigen3Targets.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/fmt/fmt-config-version.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/fmt/fmt-config.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/fmt/fmt-targets-release.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/fmt/fmt-targets.cmake /home/yzp/vcpkg/registries/ryon.ren/toolchains/clang-toolchain.cmake /home/yzp/vcpkg/scripts/buildsystems/vcpkg.cmake /home/yzp/vcpkg/scripts/toolchains/linux.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeDependentOption.cmake /usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake /usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake /usr/share/cmake/Modules/CheckIncludeFileCXX.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake/Modules/Compiler/Clang.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake /usr/share/cmake/Modules/Internal/CheckFlagCommonConfig.cmake /usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Linker/LLD-CXX.cmake /usr/share/cmake/Modules/Linker/LLD.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-LLD-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-LLD.cmake /usr/share/cmake/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/4.2.0/CMakeCXXCompiler.cmake CMakeFiles/4.2.0/CMakeSystem.cmake: phony
+build /home/yzp/Documents/cad/bottlefish-templates/CMakeLists.txt /home/yzp/Documents/cad/bottlefish-templates/cli/CMakeLists.txt /home/yzp/Documents/cad/bottlefish-templates/cmake/settings.cmake /home/yzp/Documents/cad/bottlefish-templates/lib/CMakeLists.txt /home/yzp/Documents/cad/bottlefish-templates/vcpkg-configuration.json /home/yzp/Documents/cad/bottlefish-templates/vcpkg.json /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/absl/abslConfig.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/absl/abslConfigVersion.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/absl/abslTargets-release.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/absl/abslTargets.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/cli11/CLI11Config-release.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/cli11/CLI11Config.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/cli11/CLI11ConfigVersion.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/eigen3/Eigen3Config.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/eigen3/Eigen3ConfigVersion.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/eigen3/Eigen3Targets.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/fmt/fmt-config-version.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/fmt/fmt-config.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/fmt/fmt-targets-release.cmake /home/yzp/Documents/cad/bottlefish-templates/vcpkg_installed/x64-linux-clang-rel/share/fmt/fmt-targets.cmake /home/yzp/vcpkg/registries/ryon.ren/toolchains/clang-toolchain.cmake /home/yzp/vcpkg/scripts/buildsystems/vcpkg.cmake /home/yzp/vcpkg/scripts/toolchains/linux.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeDependentOption.cmake /usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake /usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake /usr/share/cmake/Modules/CheckIncludeFileCXX.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake/Modules/Compiler/Clang.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake /usr/share/cmake/Modules/Internal/CheckFlagCommonConfig.cmake /usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Linker/LLD-CXX.cmake /usr/share/cmake/Modules/Linker/LLD.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-LLD-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-LLD.cmake /usr/share/cmake/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/4.2.0/CMakeCXXCompiler.cmake CMakeFiles/4.2.0/CMakeSystem.cmake: phony
 
 
 #############################################

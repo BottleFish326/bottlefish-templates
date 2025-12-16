@@ -633,4 +633,4 @@ The package fmt provides CMake targets:
     find_package(fmt CONFIG REQUIRED)
     target_link_libraries(main PRIVATE fmt::fmt-header-only)
 
-All requested installations completed successfully in: 132 us
+All requested installations completed successfully in: 140 us
